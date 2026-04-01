@@ -1,0 +1,32 @@
+{
+  "name": "digixify-agent",
+  "version": "0.1.0",
+  "description": "Human-centric AI agent built on OpenClaw and OpenRouter",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch & nodemon dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "openclaw",
+    "openrouter"
+  ],
+  "author": "",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "openai": "^4.70.0",
+    "node-telegram-bot-api": "^0.66.0",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.1",
+    "@types/ws": "^8.5.13",
+    "typescript": "^5.7.2",
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,0 +1,17 @@
+services:
+  digixify:
+    image: ghcr.io/mahdoosh/digixify:latest
+    container_name: digixify
+    restart: unless-stopped
+    environment:
+      TELEGRAM_BOT_TOKEN: ${TELEGRAM_BOT_TOKEN}
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      OPENAI_MODEL: ${OPENAI_MODEL:-openrouter/auto}
+      DIGIXIFY_WORKSPACE: /workspace
+      AGENT_NAME: ${AGENT_NAME:-Digixify}
+      AGENT_SOUL: ${AGENT_SOUL:-You are a helpful, transparent AI colleague. You think step by step and use tools when needed. You explain your actions. You respect user privacy and safety.}
+    volumes:
+      - ./workspace:/workspace
+    # optionally expose ports if we later add HTTP API
+    # ports:
+    #   - "3000:3000"
