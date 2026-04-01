@@ -37,7 +37,7 @@ If you prefer Hostinger's Docker UI:
 3. Paste the contents of [docker-compose.yml](https://raw.githubusercontent.com/mahdoosh/Digixify/main/docker-compose.yml) from this repo.
 4. Add environment variables in the UI:
    - `TELEGRAM_BOT_TOKEN` (your bot token from @BotFather)
-   - `OPENAI_API_KEY` = `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`
+   - `OPENAI_API_KEY` (your OpenRouter API key)
    - `ADMIN_CHAT_ID` = `7446908876`
    - `OPENAI_MODEL` = `openrouter/auto`
 5. Enable **Auto-restart**.
