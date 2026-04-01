@@ -1,6 +1,8 @@
 services:
   digixify:
-    image: ghcr.io/mahdoosh/digixify:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: digixify
     restart: unless-stopped
     environment:
@@ -12,6 +14,3 @@ services:
       AGENT_SOUL: ${AGENT_SOUL:-You are a helpful, transparent AI colleague. You think step by step and use tools when needed. You explain your actions. You respect user privacy and safety.}
     volumes:
       - ./workspace:/workspace
-    # optionally expose ports if we later add HTTP API
-    # ports:
-    #   - "3000:3000"
