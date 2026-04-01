@@ -34,16 +34,16 @@ If you prefer Hostinger's Docker UI:
 
 1. In Docker Manager, create a **Compose** project.
 2. Name it `digixify`.
-3. Paste the contents of [docker-compose.yml](https://raw.githubusercontent.com/mahdoosh/Digixify/main/docker-compose.yml) from this repo.
-4. Add environment variables in the UI:
-   - `TELEGRAM_BOT_TOKEN` (your bot token from @BotFather)
-   - `OPENAI_API_KEY` (your OpenRouter API key)
-   - `ADMIN_CHAT_ID` = `7446908876`
-   - `OPENAI_MODEL` = `openrouter/auto`
+3. **Compose URL**: `https://raw.githubusercontent.com/mahdoosh/Digixify/main/docker-compose.yml`
+4. Add these environment variables in the UI:
+   - `TELEGRAM_BOT_TOKEN` = your bot token from @BotFather
+   - `OPENAI_API_KEY` = your OpenRouter API key
+   - `ADMIN_CHAT_ID` = `7446908876` (your Telegram user ID for startup alert)
+   - `OPENAI_MODEL` = `stepfun/step-3.5-flash:free` (default free model)
 5. Enable **Auto-restart**.
 6. Deploy.
 
-The manager will pull the image from `ghcr.io/mahdoosh/digixify:latest` and start it.
+The manager will build the image from source and start the container.
 
 ---
 

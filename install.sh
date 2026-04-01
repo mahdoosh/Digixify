@@ -53,7 +53,7 @@ cat > .env <<EOF
 TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
 OPENAI_API_KEY=${OPENROUTER_API_KEY}
 ADMIN_CHAT_ID=${ADMIN_CHAT_ID}
-OPENAI_MODEL=openrouter/auto
+OPENAI_MODEL=stepfun/step-3.5-flash:free
 DIGIXIFY_WORKSPACE=/workspace
 AGENT_NAME=Digixify
 AGENT_SOUL="You are a helpful, transparent AI colleague. You think step by step and use tools when needed. You explain your actions. You respect user privacy and safety."
